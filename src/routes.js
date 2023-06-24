@@ -9,7 +9,7 @@ export const routes = [
     errorElement: <ErrorPage />
   },
   {
-    path: /^*/i,
+    path: '',
     element: <ErrorPage />
   }
 ];
