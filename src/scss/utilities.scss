@@ -1,0 +1,32 @@
+// Flex box properties
+.flex {
+  display: flex;
+
+  &--col {
+    flex-direction: column;
+  }
+
+  &--align {
+    &-center {
+      align-items: center;
+    }
+  }
+
+  &--justify {
+    &-center {
+      justify-content: center;
+    }
+
+    &-around {
+      justify-content: space-around;
+    }
+
+    &-between {
+      justify-content: space-between;
+    }
+  }
+}
+// Typography
+.text-bold {
+  font-weight: bold;
+}

@@ -1,0 +1,32 @@
+@import './utilities.scss';
+
+.navbar {
+  @extend .flex, .flex--align-center, .flex--justify-between;
+  height: 60px;
+  border-bottom: 1px solid;
+
+  &-logo {
+    @extend .text-bold;
+  }
+
+  &-links {
+    @extend .flex, .flex--align-center, .flex--justify-between;
+    width: 50%;
+  }
+
+  &-link {
+    list-style: none;
+
+    & > a {
+      text-decoration: none;
+
+      &:hover {
+        @extend .text-bold;
+      }
+    }
+
+    &:active {
+      @extend .text-bold;
+    }
+  }
+}
