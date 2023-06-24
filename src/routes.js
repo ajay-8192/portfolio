@@ -4,12 +4,12 @@ import HomePage from "./pages/Home.jsx";
 
 export const routes = [
   {
-    path: '/',
+    path: '/portfolio/',
     element: <HomePage />,
     errorElement: <ErrorPage />
   },
   {
-    path: '/a',
+    path: /^*/i,
     element: <ErrorPage />
   }
 ];
