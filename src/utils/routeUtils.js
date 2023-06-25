@@ -1,7 +1,7 @@
 import { ABOUT_ROUTE, BASE_ROUTE, CONTACT_ROUTE, HOME_ROUTE, PROJECT_ROUTE } from "../constants/routeConstants";
 
 export const getRoutes = (route) => {
-  let selectedRoute = "";
+  let selectedRoute = "/";
   switch (route) {
     case HOME_ROUTE:
       selectedRoute = "/";
