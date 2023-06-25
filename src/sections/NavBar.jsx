@@ -1,5 +1,12 @@
 import React from "react";
 import styles from "../scss/navbar.module.scss";
+import {
+  HOME_ROUTE,
+  ABOUT_ROUTE,
+  PROJECT_ROUTE,
+  CONTACT_ROUTE
+} from "../constants/routeConstants";
+import { getRoutes } from "../utils/routeUtils";
 
 const NavBar = () => {
   return (
@@ -9,16 +16,16 @@ const NavBar = () => {
       </div>
       <div className={styles["navbar-links"]}>
         <li className={styles["navbar-link"]}>
-          <a href="/">Home</a>
+          <a href={getRoutes(HOME_ROUTE)}>Home</a>
         </li>
         <li className={styles["navbar-link"]}>
-          <a href="/">About</a>
+          <a href={getRoutes(ABOUT_ROUTE)}>About</a>
         </li>
         <li className={styles["navbar-link"]}>
-          <a href="/">Projects</a>
+          <a href={getRoutes(PROJECT_ROUTE)}>Projects</a>
         </li>
         <li className={styles["navbar-link"]}>
-          <a href="/">Contact</a>
+          <a href={getRoutes(CONTACT_ROUTE)}>Contact</a>
         </li>
       </div>
     </nav>
