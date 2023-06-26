@@ -1,5 +1,16 @@
+@import './utilities.scss';
+
 .hero {
-  width: 100%;
-  min-height: 100%;
-  background-color: rgb(160, 175, 235);
+  @extend .flex, .width-full;
+  height: calc(100vh - 60px);
+
+  &-content {
+    @extend .width-half;
+    align-self: center;
+  }
+
+  &-image {
+    @extend .flex, .flex--align-center, .flex--justify-center, .width-half;
+    width: 50%;
+  }
 }

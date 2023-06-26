@@ -18,5 +18,8 @@ export const getRoutes = (route) => {
     default:
       break;
   }
-  return BASE_ROUTE + selectedRoute;
+  if (process.env.NODE_ENV === "production") {
+    return BASE_ROUTE + selectedRoute;
+  }
+  return selectedRoute;
 };

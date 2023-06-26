@@ -3,7 +3,6 @@
 .navbar {
   @extend .flex, .flex--align-center, .flex--justify-between;
   height: 60px;
-  border-bottom: 1px solid;
 
   &-logo {
     @extend .text-bold;
@@ -16,16 +15,18 @@
 
   &-link {
     list-style: none;
+    padding: 5px 0;
 
     & > a {
       text-decoration: none;
+      color: white;
 
       &:hover {
         @extend .text-bold;
       }
     }
 
-    &:active {
+    &.active {
       @extend .text-bold;
     }
   }

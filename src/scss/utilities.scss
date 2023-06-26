@@ -26,7 +26,21 @@
     }
   }
 }
+
 // Typography
 .text-bold {
   font-weight: bold;
+}
+
+// Widths and heights
+.vheight-full {
+  height: 100vh;
+}
+
+.width-full {
+  width: 100%;
+}
+
+.width-half {
+  width: 50%;
 }
