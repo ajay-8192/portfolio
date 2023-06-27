@@ -1,0 +1,10 @@
+@import './utilities.scss';
+
+.aboutme {
+  @extend .flex, .flex--align-center, .vheight-full;
+
+  &--content {
+    width: 50%;
+    margin: auto;
+  }
+}
