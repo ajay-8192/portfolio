@@ -9,6 +9,7 @@ const AboutMe = () => {
         <img
           src="https://10web-site.ai/74/wp-content/uploads/sites/86/2023/06/glenn-carstens-peters-npxXWgQ33ZQ-unsplash_t6EFdnZG.webp"
           alt="About Me"
+          width="100%"
         />
       </div>
       <div className={styles["aboutme--content"]}>

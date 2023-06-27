@@ -8,3 +8,14 @@
     margin: auto;
   }
 }
+
+@media (max-width: 1080px) {
+  .aboutme {
+    display: block;
+
+    &--content {
+      width: auto;
+      margin: 0;
+    }
+  }
+}
