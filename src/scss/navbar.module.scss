@@ -12,6 +12,10 @@
     color: lightskyblue;
   }
 
+  &-m-links {
+    display: none;
+  }
+
   &-links {
     @extend .flex, .flex--align-center, .flex--justify-between;
     width: 50%;
@@ -28,6 +32,20 @@
       &:hover {
         @extend .text-bold;
       }
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  .navbar {
+    margin: 0 1rem;
+
+    &-m-links {
+      display: block;
+    }
+
+    &-links {
+      display: none;
     }
   }
 }

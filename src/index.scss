@@ -11,3 +11,9 @@ body {
     display: none;
   }
 }
+
+@media (max-width: 1080px) {
+  body {
+    padding: 0;
+  }
+}

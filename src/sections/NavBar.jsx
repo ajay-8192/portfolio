@@ -55,6 +55,7 @@ const NavBar = () => {
           </NavLink>
         </li>
       </div>
+      <div className={styles["navbar-m-links"]}>Mobile Nav</div>
     </nav>
   );
 };
