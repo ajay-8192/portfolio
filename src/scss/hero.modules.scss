@@ -1,16 +1,20 @@
 @import './utilities.scss';
 
 .hero {
-  @extend .flex, .width-full;
+  @extend .flex, .width-full, .flex--justify-between;
   height: calc(100vh - 60px);
 
   &-content {
-    @extend .width-half;
+    width: 40%;
     align-self: center;
   }
 
   &-image {
     @extend .flex, .flex--align-center, .flex--justify-center, .width-half;
     width: 50%;
+
+    & > img {
+      border-radius: 0 25%;
+    }
   }
 }

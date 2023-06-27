@@ -13,7 +13,7 @@ export const getRoutes = (route) => {
       selectedRoute = "/projects";
       break;
     case CONTACT_ROUTE:
-      selectedRoute = "/about";
+      selectedRoute = "/contact";
       break;
     default:
       break;

@@ -6,4 +6,8 @@ import App from './App.jsx';
 import './index.scss';
 
 const root = createRoot(document.getElementById('app'));
-root.render(<App />);
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);

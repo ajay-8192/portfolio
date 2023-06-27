@@ -7,8 +7,15 @@ import {
   CONTACT_ROUTE
 } from "../constants/routeConstants";
 import { getRoutes } from "../utils/routeUtils";
+import { Link, NavLink } from "react-router-dom";
 
 const NavBar = () => {
+  const activeNavStyles = {
+    fontWeight: "bold",
+    padding: "10px 0",
+    borderBottom: "1px solid",
+    transition: "all 2s ease",
+  };
   return (
     <nav className={styles["navbar"]}>
       <div id="logo" aria-label="Ajay" className={styles["navbar-logo"]}>
@@ -16,16 +23,36 @@ const NavBar = () => {
       </div>
       <div className={styles["navbar-links"]}>
         <li className={styles["navbar-link"]}>
-          <a href={getRoutes(HOME_ROUTE)}>Home</a>
+          <NavLink
+            to={getRoutes(HOME_ROUTE)}
+            style={({ isActive }) => (isActive ? activeNavStyles : {})}
+          >
+            Home
+          </NavLink>
         </li>
         <li className={styles["navbar-link"]}>
-          <a href={getRoutes(ABOUT_ROUTE)}>About</a>
+          <NavLink
+            to={getRoutes(ABOUT_ROUTE)}
+            style={({ isActive }) => (isActive ? activeNavStyles : {})}
+          >
+            About
+          </NavLink>
         </li>
         <li className={styles["navbar-link"]}>
-          <a href={getRoutes(PROJECT_ROUTE)}>Projects</a>
+          <NavLink
+            to={getRoutes(PROJECT_ROUTE)}
+            style={({ isActive }) => (isActive ? activeNavStyles : {})}
+          >
+            Projects
+          </NavLink>
         </li>
         <li className={styles["navbar-link"]}>
-          <a href={getRoutes(CONTACT_ROUTE)}>Contact</a>
+          <NavLink
+            to={getRoutes(CONTACT_ROUTE)}
+            style={({ isActive }) => (isActive ? activeNavStyles : {})}
+          >
+            Contact
+          </NavLink>
         </li>
       </div>
     </nav>
