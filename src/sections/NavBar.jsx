@@ -19,7 +19,7 @@ const NavBar = () => {
   return (
     <nav className={styles["navbar"]}>
       <div id="logo" aria-label="Ajay" className={styles["navbar-logo"]}>
-        Logo
+        Ajay Chowdary
       </div>
       <div className={styles["navbar-links"]}>
         <li className={styles["navbar-link"]}>
