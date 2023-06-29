@@ -20,7 +20,7 @@ const Hero = () => {
         <img
           src={Image}
           alt="web developer"
-          width="100%"
+          width="70%"
         />
       </div>
     </div>
