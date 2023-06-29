@@ -1,5 +1,8 @@
 import React from "react";
+
 import styles from "../scss/hero.modules.scss";
+
+import Image from '../assets/profile.webp';
 
 const Hero = () => {
   return (
@@ -15,7 +18,7 @@ const Hero = () => {
       </div>
       <div className={styles["hero-image"]}>
         <img
-          src="https://plus.unsplash.com/premium_photo-1678565869434-c81195861939?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+          src={Image}
           alt="web developer"
           width="100%"
         />

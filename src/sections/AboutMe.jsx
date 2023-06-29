@@ -2,14 +2,15 @@ import React from "react";
 
 import styles from '../scss/aboutme.modules.scss';
 
+import Image from '../assets/pic-2.webp';
+
 const AboutMe = () => {
   return (
     <section className={styles["aboutme"]}>
-      <div>
+      <div className={styles["aboutme--image"]}>
         <img
-          src="https://10web-site.ai/74/wp-content/uploads/sites/86/2023/06/glenn-carstens-peters-npxXWgQ33ZQ-unsplash_t6EFdnZG.webp"
+          src={Image}
           alt="About Me"
-          width="100%"
         />
       </div>
       <div className={styles["aboutme--content"]}>
