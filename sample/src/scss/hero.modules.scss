@@ -1,0 +1,58 @@
+@import './utilities.scss';
+
+.hero {
+  @extend .flex, .width-full, .flex--justify-between;
+  height: calc(100vh - 60px);
+
+  &--content {
+    width: 40%;
+    align-self: center;
+
+    &-title {
+      font-size: 4rem;
+      @extend .text-bold;
+    }
+
+    &-description {
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+  }
+
+  &-image {
+    @extend .flex, .flex--align-center, .flex--justify-center, .width-half;
+    width: 50%;
+
+    & > img {
+      border-radius: 25% 0;
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  .hero {
+    display: block;
+    padding: 1.1rem;
+    width: auto;
+    height: auto;
+
+    &--content {
+      width: 100%;
+      text-align: center;
+
+      &-title {
+        font-size: 4rem;
+      }
+
+      &-description {
+        font-size: 1.4rem;
+        line-height: 1.6;
+      }
+    }
+
+    &-image {
+      // margin: auto;
+      width: 100%;
+    }
+  }
+}

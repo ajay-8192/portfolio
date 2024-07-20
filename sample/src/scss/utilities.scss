@@ -1,0 +1,46 @@
+// Flex box properties
+.flex {
+  display: flex;
+
+  &--col {
+    flex-direction: column;
+  }
+
+  &--align {
+    &-center {
+      align-items: center;
+    }
+  }
+
+  &--justify {
+    &-center {
+      justify-content: center;
+    }
+
+    &-around {
+      justify-content: space-around;
+    }
+
+    &-between {
+      justify-content: space-between;
+    }
+  }
+}
+
+// Typography
+.text-bold {
+  font-weight: bold;
+}
+
+// Widths and heights
+.vheight-full {
+  height: 100vh;
+}
+
+.width-full {
+  width: 100%;
+}
+
+.width-half {
+  width: 50%;
+}
