@@ -173,7 +173,7 @@ export function App() {
 				</section>
 
 				{/* Code Principles */}
-				<section id="code-and-principles" className="backdrop-blur-lg saturate-100 bg-[#f65f62bf] text-black py-10 px-6 md:py-14 md:px-16 xl:px-32 text-2xl">
+				<section id="code-and-principles" className="backdrop-blur-lg saturate-100 bg-[#f65f62bf] text-black text-2xl">
 					<div className="max-w-screen-2xl w-full mx-auto py-10 px-6 md:py-14 md:px-16 xl:px-32 space-y-8">
 						<h2 className="text-xl font-medium">CODE & PRINCIPLES</h2>
 						<p className="font-medium text-4xl">Beyond the Interface: Delving into Technical Excellence</p>
