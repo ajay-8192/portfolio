@@ -270,14 +270,14 @@ export function App() {
 								</a>
 							</p>
 						</div>
-						<div className="bg-[#790709ff] rounded-lg p-6 font-medium space-y-4">
+						{/* <div className="bg-[#790709ff] rounded-lg p-6 font-medium space-y-4">
 							<h3>Phone</h3>
 							<p className="text-[#F65F62]">
-								<a href="tel:+91 8328297562">
-									+91 8328297562
+								<a href="tel:+91 8328******">
+									+91 8328******
 								</a>
 							</p>
-						</div>
+						</div> */}
 						<div className="bg-[#790709ff] rounded-lg p-6 font-medium space-y-4">
 							<h3>LinkedIn</h3>
 							<p className="text-[#F65F62] underline">
