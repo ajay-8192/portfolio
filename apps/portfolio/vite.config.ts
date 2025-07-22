@@ -19,6 +19,7 @@ export default defineConfig(() => ({
   //  plugins: [ nxViteTsPaths() ],
   // },
   build: {
+    assetsDir: 'portfolio',
     outDir: './dist',
     emptyOutDir: true,
     reportCompressedSize: true,
