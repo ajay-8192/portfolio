@@ -1,82 +1,136 @@
-# 
+# Portfolio Monorepo
 
-<a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
+This repository is a modern Nx monorepo featuring two main applications:
 
-✨ Your new, shiny [Nx workspace](https://nx.dev) is almost ready ✨.
+- **Portfolio**: A personal portfolio site for Ajay Chowdary, showcasing projects, expertise, and contact information.
+- **Blog**: (Structure present, implementation details to be added.)
 
-[Learn more about this workspace setup and its capabilities](https://nx.dev/getting-started/tutorials/react-monorepo-tutorial?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects) or run `npx nx graph` to visually explore what was created. Now, let's get you up to speed!
+Built with React, Vite, Tailwind CSS, and Nx for scalable, maintainable development.
 
-## Finish your remote caching setup
+---
 
-[Click here to finish setting up your workspace!](https://cloud.nx.app/connect/I0fpbdmJUJ)
+## Features
 
+- **Monorepo**: Manage multiple apps with shared tooling and dependencies.
+- **Modern Stack**: React 19, Vite, Tailwind CSS, TypeScript.
+- **CI/CD Ready**: Example GitHub Actions workflow for AWS EC2 and ECS deployments.
+- **Best Practices**: Linting, formatting, and scalable project structure.
 
-## Run tasks
+---
 
-To run the dev server for your app, use:
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm 9+
+- [Nx CLI](https://nx.dev/)
+
+### Install dependencies
+
+```sh
+npm install
+```
+
+### Run the Portfolio App
 
 ```sh
 npx nx serve portfolio
 ```
 
-To create a production bundle:
+### Build for Production
 
 ```sh
 npx nx build portfolio
 ```
 
-To see all available targets to run for a project, run:
+### Run the Blog App
 
 ```sh
-npx nx show project portfolio
+npx nx serve blog
 ```
 
-These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
+---
 
-[More about running tasks in the docs &raquo;](https://nx.dev/features/run-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+## Project Structure
 
-## Add new projects
-
-While you could add new projects to your workspace manually, you might want to leverage [Nx plugins](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) and their [code generation](https://nx.dev/features/generate-code?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) feature.
-
-Use the plugin's generator to create new projects.
-
-To generate a new application, use:
-
-```sh
-npx nx g @nx/react:app demo
+```
+apps/
+  portfolio/    # Personal portfolio site
+  blog/         # Blog app (template)
 ```
 
-To generate a new library, use:
+---
 
-```sh
-npx nx g @nx/react:lib mylib
-```
+## Deployment
 
-You can use `npx nx list` to get a list of installed plugins. Then, run `npx nx list <plugin-name>` to learn about more specific capabilities of a particular plugin. Alternatively, [install Nx Console](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) to browse plugins and generators in your IDE.
+### CI/CD
 
-[Learn more about Nx plugins &raquo;](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) | [Browse the plugin registry &raquo;](https://nx.dev/plugin-registry?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+This repo is ready for automated deployment to AWS:
 
+- **EC2**: Uploads static build to an EC2 instance and restarts Nginx.
+- **ECS**: Builds Docker images, pushes to ECR, and updates ECS services.
 
-[Learn more about Nx on CI](https://nx.dev/ci/intro/ci-with-nx#ready-get-started-with-your-provider?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+See `.github/workflows/deploy.yml` for details.
 
-## Install Nx Console
+### Docker
 
-Nx Console is an editor extension that enriches your developer experience. It lets you run tasks, generate code, and improves code autocompletion in your IDE. It is available for VSCode and IntelliJ.
+Each app includes a production-ready Dockerfile and Nginx config for static hosting.
 
-[Install Nx Console &raquo;](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+---
 
-## Useful links
+## Technologies Used
 
-Learn more:
+- **React 19**
+- **Vite**
+- **Tailwind CSS**
+- **TypeScript**
+- **Nx**
+- **AWS (EC2, ECS, ECR)**
+- **GitHub Actions**
 
-- [Learn more about this workspace setup](https://nx.dev/getting-started/tutorials/react-monorepo-tutorial?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects)
-- [Learn about Nx on CI](https://nx.dev/ci/intro/ci-with-nx?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Releasing Packages with Nx release](https://nx.dev/features/manage-releases?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [What are Nx plugins?](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+---
 
-And join the Nx community:
-- [Discord](https://go.nx.dev/community)
-- [Follow us on X](https://twitter.com/nxdevtools) or [LinkedIn](https://www.linkedin.com/company/nrwl)
-- [Our Youtube channel](https://www.youtube.com/@nxdevtools)
-- [Our blog](https://nx.dev/blog?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+## Portfolio App
+
+A showcase of Ajay Chowdary’s work, skills, and contact information.
+
+**Sections:**
+- About Me
+- Expertise
+- Featured Work
+- Code & Principles
+- Contact
+
+**Live Demo:** _[Add link if deployed]_
+**Contact:** ajaychowdary8192@gmail.com
+
+---
+
+## Blog App
+
+A template for a future blog.  
+_Implementation details to be added._
+
+---
+
+## Contributing
+
+1. Fork the repo
+2. Create your feature branch (`git checkout -b feature/YourFeature`)
+3. Commit your changes (`git commit -am 'Add new feature'`)
+4. Push to the branch (`git push origin feature/YourFeature`)
+5. Open a pull request
+
+---
+
+## License
+
+MIT
+
+---
+
+## Author
+
+Ajay Chowdary  
+[LinkedIn](https://linkedin.com/in/ajay-chowdary-8192n) | [GitHub](https://github.com/ajay-8192)

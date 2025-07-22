@@ -2,3 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Barlow, Inter, sans-serif;
+    word-break: none;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+}
+
+.hide-scrollbar {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+}
+
+body {
+    background-image: url(../public/canaveral-background.5dbf8d8ea7288ff1d7f1055cead80d9f.avif);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    scrollbar-gutter: stable;
+}
