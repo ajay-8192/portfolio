@@ -5,9 +5,6 @@
   "references": [
     {
       "path": "./apps/portfolio"
-    },
-    {
-      "path": "./app/blog"
     }
   ]
 }

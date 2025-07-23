@@ -35,6 +35,9 @@ export function App() {
 
 				{/* Thank You */}
 				<ThankYou />
+				<footer className="mt-10 text-center text-xs text-neutral-400">
+					© 2025 — Design by <a href="https://gamma.app" className="text-blue-400 hover:underline">Gamma</a>, Developed by <a href="https://ajaychowdary.com" className="text-blue-400 hover:underline">Ajay Chowdary</a>
+				</footer>
 			</main>
 		</div>
 	);
